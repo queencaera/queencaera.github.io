@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfollio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/eee8ae9aee.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, Im <span>Caera</span> Jasper <br>From Chicago</h1>
+            </div>
+        </div>
+    </div>
+<!-----------------------About-------------------->
+   <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.11.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title" style="color: #fff">About Me</h1>
+                    <p>Caera Jasper is a student of life! Always growing and learning. I have been a sofftware Developer
+                        for 10 months. I have an Advanced Software Developer Certificate from the University of Phoenix Online
+                        where I learned skills such as HTML, CSS, JavaScript and more. Although, I am extremely confident in my 
+                        skills, I remain coachable and open improvement. <br><br>
+                        I have been a small business owner for over 3 years and an employee for over 14 years. I work well with others
+                        while maintainging leadership qualities such as project management, training, assigning tasks, and implementing
+                        new stratagies.<br><br>
+                        I would make a great addition to your company and team!</p>
+                    
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>HTML</span><br>Structure and Framework</li>
+                                <li><span>CSS</span><br>User Interfaces and Design</li>
+                                <li><span>JavaScript</span><br>Website and App Development</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2022-Present</span><br>Freelancer</li>
+                                <li><span>2023-Present</span><br>Junior Developer Google</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2022</span><br>University of Phoenix</li>
+                                <li><span>2022</span><br>CodeAcademy Certificates</li>
+                                <li><span>2022</span><br> Self Taugh Courses and Programs</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--------------------Services---------------------------->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title" style="color: #fff">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web design is the planning and creation of websites. This includes a number of 
+                        separate skills that all fall under the umbrella of web design. Some examples of these 
+                        skills are information architecture, user interface, site structure, navigation, layout, 
+                        colors, fonts, and overall imagery.</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>UX Design stands for User Experience Design, whereas UI Design stands for User Interface 
+                        Design. UX design is developing and improving quality interaction between a user and all 
+                        elements of a company, while UI design transmits the brand’s strength and visual assets to a 
+                        product’s interface.</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>We are looking for a qualified Application Developer to design and code functional programs and 
+                        applications. You will work as part of a team and individually with little supervision.
+
+                        A great Application Developer has excellent knowledge of at least one programming language. 
+                        They must be familiar with a variety of operating systems and platforms. The ideal candidate
+                         will also have an analytical mindset and a keen eye for detail.</p>
+                        <a href="#">Learn more</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--------------------------portfolio---------------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title" style="color: #fff">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to talented people from around the world.
+                            Download it from the play store.</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to talented people from around the world.
+                            Download it from the play store.</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                     <img src="images/work-3.png">
+                     <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you to talented people from around the world.
+                            Download it from the play store.</p>
+                            <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                 </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!----------------contact----------------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> contact@example.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 123-456-7890</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/souledouthandmadebeauty" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2" target="_blank">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Caera. Made with <i class="fa-solid fa-heart"></i> Love</p>
+        </div>
+    </div>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw5G7tn93lqwKiRiNINcos65-ZEdClX6hQBkycQUQ_ayRAa-p3QoSZvhjhXj4ImDfHV/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById('msg')
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+    
+</body>
+</html>
